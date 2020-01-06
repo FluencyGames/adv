@@ -1,14 +1,15 @@
-from vocab import Verb
+from base import Verb
 
-class take(Verb):
-    def __init__(self, name, synonyms):
-        super().__init__()
-        self.name = name
-        self.synonyms = list(synonyms)
 
-    def validate(self, directObject = None):
-        pass
+class Take(Verb):
+    verb = 'take, ta'
 
-    def action(self, directObject = None, preposition=None, iobject=None):
-        pass
+    def __init__(self):
+        super(Take, self).__init__()
 
+
+class Drop(Verb):
+    verb = 'Drop, dr'
+
+    def __init__(self):
+        super(Drop, self).__init__()

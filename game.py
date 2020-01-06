@@ -1,4 +1,4 @@
-
+from actor import Me
 
 class Game:
     TITLE = "pyAdventure Engine"
@@ -8,8 +8,14 @@ class Game:
     PROMPT = 'Tell me what to do>'
     score = 0
 
-    def startup(self):
+    # starting location
+    start = None
+    verbose = False
+
+    @staticmethod
+    def initialize():
         # handle all startup function here
+        Me.location = Game.start
         pass
 
     @staticmethod
